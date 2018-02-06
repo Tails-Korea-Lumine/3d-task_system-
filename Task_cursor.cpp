@@ -69,7 +69,7 @@ namespace  Cursor
 		this->pos.y = (float)this->Move_Cursor(this->select_pos);
 
 		auto in1 = DI::GPad_GetState("P1");
-		if (in1.B1.down || in1.ST.down)
+		if (in1.B3.down || in1.ST.down)
 		{
 			this->Kill();
 		}

@@ -68,6 +68,14 @@ namespace  CameraMan
 		if (p == nullptr || ge->gameoverFlag) { return; }
 
 		this->angle.y = in1.LStick.axis.x * ML::ToRadian(4);
+		if (in1.HL.on)
+		{
+			this->angle.y -= ML::ToRadian(4);			
+		}
+		if (in1.HR.on)
+		{
+			this->angle.y += ML::ToRadian(4);			
+		}
 
 		ML::Mat4x4 matR;
 		matR.RotationY(this->angle.y);

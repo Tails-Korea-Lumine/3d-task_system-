@@ -67,6 +67,7 @@ namespace MyPG
 			{ DIK_V, DI::But::B4 },{ DIK_A, DI::But::SE },{ DIK_S, DI::But::ST },
 			{ DIK_Q, DI::But::L1 },{ DIK_W, DI::But::R1 },{ DIK_E, DI::But::L2 },
 			{ DIK_R, DI::But::R2 },{ DIK_D, DI::But::L3 },{ DIK_NUMPAD5, DI::But::R3 },
+			{DIK_G,DI::But::HL},{DIK_J,DI::HR},{DIK_Y,DI::But::HU},{DIK_H,DI::HD},
 		};
 		//ゲームパッドパラメータ
 		DI::KeyDatas_GP	but = {
@@ -76,6 +77,8 @@ namespace MyPG
 			{ DI::GPB::B07, DI::But::L2 },{ DI::GPB::B08, DI::But::R2 },
 			{ DI::GPB::B09, DI::But::SE },{ DI::GPB::B10, DI::But::ST },
 			{ DI::GPB::B11, DI::But::L3 },{ DI::GPB::B12, DI::But::R3 },
+			{ DI::GPB::HSU, DI::But::HU },{ DI::GPB::HSD, DI::But::HD },
+			{ DI::GPB::HSL, DI::But::HL },{ DI::GPB::HSR, DI::But::HR },
 		};
 		DI::GPad_CreateKBGP("P1", ls, rs, key, 0, but);
 

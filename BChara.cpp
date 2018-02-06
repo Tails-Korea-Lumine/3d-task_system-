@@ -52,6 +52,18 @@ void BChara::Change_Angle(Angle4& playerAngle, bool Rotation_is_true_Angle4_is_f
 			ML::Mat4x4 matR;
 			matR.RotationY(this->angle.y);
 		}
+		if (in1.HL.on)
+		{
+			this->angle.y -= ML::ToRadian(4);
+			ML::Mat4x4 matR;
+			matR.RotationY(this->angle.y);
+		}
+		if (in1.HR.on)
+		{
+			this->angle.y += ML::ToRadian(4);
+			ML::Mat4x4 matR;
+			matR.RotationY(this->angle.y);
+		}
 	}
 }
 //‚ß‚èž‚Ü‚È‚¢ˆ—

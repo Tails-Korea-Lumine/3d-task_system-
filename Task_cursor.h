@@ -8,7 +8,7 @@
 namespace Cursor
 {
 	//タスクに割り当てるグループ名と固有名
-	const  string  defGroupName("タイトル");	//グループ名
+	const  string  defGroupName("カーソル");	//グループ名
 	const  string  defName("NoName");	//タスク名
 	//-------------------------------------------------------------------
 	class  Resource
